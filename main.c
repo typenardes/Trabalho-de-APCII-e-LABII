@@ -98,6 +98,18 @@ float percentual_vivos_tripulacao(Passageiro* p, int n_passageiros) {
     return percentual_vivos_classe("tripulação", p, n_passageiros);
 }
 
+valida_login(){}
+
+carregar_arquivo(){}
+
+exibe_sexo(){}
+
+exibe_classe(){}
+
+exibe_situação(){}
+
+menu_principal(){}
+
 
 int main() {
     FILE *arquivo;
