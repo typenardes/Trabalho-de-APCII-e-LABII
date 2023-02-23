@@ -24,7 +24,7 @@ float percentual_homens_vivos(Passageiro *p, int num_passageiros)
             }
         }
     }
-    return ((float) homens_vivos / homens) * 100.0;
+    return ((float) homens * homens_vivos) / 100.0;
 }
 
 float percentual_mulheres_vivas(Passageiro *p, int num_passageiros) 
@@ -39,7 +39,7 @@ float percentual_mulheres_vivas(Passageiro *p, int num_passageiros)
             }
         }
     }
-    return ((float) mulheres_vivas / mulheres) * 100.0;
+    return ((float) mulheres * mulheres_vivas) / 100.0;
 }
 
 float percentual_criancas_vivas(Passageiro* passageiros, int num_passageiros) {
@@ -54,7 +54,7 @@ float percentual_criancas_vivas(Passageiro* passageiros, int num_passageiros) {
         }
     }
 
-    return (float) num_criancas_vivas / num_criancas * 100;
+    return ((float) num_criancas * num_criancas_vivas) / 100.0;
 }
 
 float percentual_adultos_vivos(Passageiro* passageiros, int num_passageiros) {
@@ -69,7 +69,7 @@ float percentual_adultos_vivos(Passageiro* passageiros, int num_passageiros) {
         }
     }
 
-    return (float) num_adultos_vivos / num_adultos * 100;
+    return ((float) num_adultos * num_adultos_vivos) / 100.0;
 }
 
 float percentual_vivos_classe(char* classe, Passageiro* p, int n_passageiros) {
@@ -79,7 +79,7 @@ float percentual_vivos_classe(char* classe, Passageiro* p, int n_passageiros) {
             n_vivos++;
         }
     }
-    return (float)n_vivos * 100.0 / (float)n_passageiros;
+    return ((float)n_vivos * (float)n_passageiros) / 100.0;
 }
 
 float percentual_vivos_primeira_classe(Passageiro* p, int n_passageiros) {
